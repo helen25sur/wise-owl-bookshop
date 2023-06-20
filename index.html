@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wise Owl Bookshop | A Haven for Book Lovers</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Libre+Bodoni:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="./assets/styles/index.css">
+
+  <script src="https://kit.fontawesome.com/f40fd5b04a.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'sans': ['Lato', 'ui-sans-serif', 'system-ui',],
+          'serif': ['Libre Bodoni', 'ui-serif', 'Georgia',],
+          'mono': ['ui-monospace', 'SFMono-Regular',],
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+  <script src="./assets/scripts/index.js" defer></script>
+</head>
+
+<body class="bg-stone-900 text-stone-100 font-sans text-md overflow-x-hidden">
+  <header class="main-header bg-gradient-to-b from-stone-950 to-stone-800 shadow-2xl z-50 sticky top-0">
+    <div class="container flex mx-auto py-2 px-6 items-center justify-between">
+      <div class="logo-block w-full xl:w-1/3">
+        <a href="/" class="flex items-center hover:text-rose-500 transition-colors duration-200">
+          <img class="bg-stone-400/75 border-4 border-stone-600/75 rounded-lg" src="./assets/images/logo.png"
+            alt="The logotype of The Wise Owl Bookshop" width="80">
+          <div class="title ms-3 text-lg font-serif tracking-wide ">
+            <h1>The Wise Owl Bookshop</h1>
+            <hr class="hidden md:flex w-10 mx-auto my-1" />
+            <h2 class="hidden md:flex">A Haven for Book Lovers</h2>
+          </div>
+        </a>
+      </div>
+      <nav class="main-navigation w-2/3 flex items-center">
+        <button id="mob-menu-btn" class="mob-burger btn not-active ms-auto">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-list xl:w-3/5 ms-auto flex items-center justify-between gap-x-2 gap-y-4 xl:gap-y-0 xl:gap-x-2">
+          <li class="nav-item"><a href="#about"
+              class="nav-link text-md font-semibold leading-6 hover:underline">About</a></li>
+          <li class="nav-item"><a href="#features"
+              class="nav-link text-md font-semibold leading-6 hover:underline">Features</a></li>
+          <li class="nav-item"><a href="#products"
+              class="nav-link text-md font-semibold leading-6 hover:underline">Products</a></li>
+          <li class="nav-item"><a href="#pricing"
+              class="nav-link text-md font-semibold leading-6 hover:underline">Pricing</a></li>
+          <li class="nav-item"><a href="#testimonials"
+              class="nav-link text-md font-semibold leading-6 hover:underline">Testimonials</a></li>
+          <li class="nav-item"><a href="#contacts"
+              class="nav-link text-md font-semibold leading-6 hover:underline">Contacts</a></li>
+        </ul>
+        <ul
+          class="nav-list social-list w-20 flex items-center justify-between ms-6 text-xl gap-x-2 gap-y-4 xl:gap-y-0 xl:gap-x-2">
+          <li class="social-item"><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+              class="social-link"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li class="social-item"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+              class="social-link"><i class="fa-brands fa-facebook"></i></a></li>
+          <li class="social-item"><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+              class="social-link"><i class="fa-brands fa-square-youtube"></i></a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="top" class="main-content relative">
+    <section class="hero -mt-24 splide" id="video-carousel" aria-label="Slider Book's Trailers">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="splide__slide__container relative">
+              <!-- &loop=1 autoplay=1 -->
+              <iframe class="w-full h-screen"
+                src="https://www.youtube.com/embed/sFyExUrmdxg?controls=0&mute=1&showinfo=0&playlist=sFyExUrmdxg"
+                frameborder="0" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="splide_slide_content w-full absolute bottom-20 mx-auto text-center">
+              <h3 class="font-serif text-3xl my-6">"Fairy Tale" by Stephen King</h3>
+              <a href="#pricing"
+                class="rounded-md bg-rose-800 hover:bg-rose-900 transition-colors duration-200 px-6 py-3 text-md font-semibold shadow-md uppercase tracking-wide">Buy
+                Now</a>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="splide__slide__container relative">
+              <iframe class="w-full h-screen"
+                src="https://www.youtube.com/embed/caX_2dz6yPw?controls=0&mute=1&showinfo=0&playlist=caX_2dz6yPw"
+                frameborder="0" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="splide_slide_content w-full absolute bottom-20 mx-auto text-center">
+              <h3 class="font-serif text-3xl my-6">"The night she disappeared" by Lisa Jewell</h3>
+              <a href="#pricing"
+                class="rounded-md bg-rose-800 hover:bg-rose-900 transition-colors duration-200 px-6 py-3 text-md font-semibold shadow-md uppercase tracking-wide">Buy
+                Now</a>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="splide__slide__container relative">
+              <iframe class="w-full h-screen"
+                src="https://www.youtube.com/embed/oUEb7BU3a3A?controls=0&mute=1&showinfo=0&playlist=oUEb7BU3a3A"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="splide_slide_content w-full absolute bottom-20 mx-auto text-center">
+              <h3 class="font-serif text-3xl my-6">"Silver in the bone" by Alexandra Bracken</h3>
+              <a href="#pricing"
+                class="rounded-md bg-rose-800 hover:bg-rose-900 transition-colors duration-200 px-6 py-3 text-md font-semibold shadow-md uppercase tracking-wide">Buy
+                Now</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container flex mx-auto my-6 py-4 px-6 flex-col items-center justify-center">
+        <h2 class="section-title text-4xl font-serif font-bold my-6 tracking-wider self-start relative">"The Wise Owl
+          Bookshop:<br> A Haven for Book Lovers"</h2>
+        <img class="bg-stone-100/75 rounded-lg mb-3" src="./assets/images/logo.png"
+          alt="The logotype of The Wise Owl Bookshop" width="240">
+        <hr class="flex w-20 mx-auto my-3" />
+        <p class="text-lg my-4">Welcome to The Wise Owl Bookshop, a cozy haven nestled in the heart of town for all book
+          enthusiasts. Immerse yourself in our vast collection of books that cater to every taste and genre. From
+          gripping novels to thought-provoking non-fiction, we curate an extensive selection to satisfy your literary
+          cravings. Step into our warm and inviting atmosphere, where the scent of pages fills the air, and
+          knowledgeable staff eagerly guide you through the shelves. Discover hidden literary gems, engage in lively
+          discussions, and lose yourself in the magic of storytelling. Whether you're a curious reader, a dedicated
+          bookworm, or a seeker of knowledge, The Wise Owl Bookshop invites you to explore, imagine, and embrace the
+          transformative power of books.</p>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="container flex mx-auto flex-col my-6 py-4 px-6 items-center justify-center">
+        <h2 class="section-title text-3xl font-serif font-bold my-6 tracking-wider self-end relative">Our Features</h2>
+        <p class="text-lg">Discover the convenience and literary treasures of The Wise Owl Bookshop Online. With our
+          user-friendly website and extensive digital library, we bring the joy of reading right to your fingertips.
+        </p>
+        <p class="text-lg">Embrace the digital era of reading with The Wise Owl Bookshop Online. Discover, connect, and
+          embark on literary adventures from the comfort of your own home.</p>
+        <p class="text-lg mt-2">Explore the following features:</p>
+        <ul
+          class="features-list grid grid-cols-[repeat(auto-fit,_minmax(328px,_1fr))] justify-center gap-y-16 gap-x-[6.5rem] items-start mt-6">
+          <li
+            class="features-item transition-all ease-in-out bg-gradient-to-b from-stone-950 hover:from-stone-800 duration-400 cursor-pointer py-6 px-4 rounded-xl">
+            <p class="text-4xl text-rose-700 text-center"><i class="fa-solid fa-book"></i></p>
+            <h3 class="text-xl text-center my-6">Vast Digital Collection</h3>
+            <p>Immerse yourself in our expansive digital collection, offering a wide range of e-books and audiobooks.
+              Whether you prefer fiction, non-fiction, or even niche genres, you'll find a vast selection to satisfy
+              your reading preferences.</p>
+          </li>
+          <li
+            class="features-item transition-all ease-in-out bg-gradient-to-b from-stone-950 hover:from-stone-800 duration-400 cursor-pointer py-6 px-4 rounded-xl">
+            <p class="text-4xl text-rose-700 text-center"><i class="fa-solid fa-award"></i></p>
+            <h3 class="text-xl text-center my-6">Personalized Recommendations</h3>
+            <p>Our intelligent recommendation system analyzes your reading preferences and suggests books tailored to
+              your tastes. Discover new authors, genres, and hidden gems that align with your reading journey.</p>
+          </li>
+          <li
+            class="features-item transition-all ease-in-out bg-gradient-to-b from-stone-950 hover:from-stone-800 duration-400 cursor-pointer py-6 px-4 rounded-xl">
+            <p class="text-4xl text-rose-700 text-center"><i class="fa-solid fa-award"></i></p>
+            <h3 class="text-xl text-center my-6">Virtual Book Clubs</h3>
+            <p>Engage with fellow bookworms in our virtual book clubs. Join vibrant discussions, share insights, and
+              connect with like-minded readers from around the world. Expand your literary horizons and foster a sense
+              of community.</p>
+          </li>
+          <li
+            class="features-item transition-all ease-in-out bg-gradient-to-b from-stone-950 hover:from-stone-800 duration-400 cursor-pointer py-6 px-4 rounded-xl">
+            <p class="text-4xl text-rose-700 text-center"><i class="fa-solid fa-bag-shopping"></i></p>
+            <h3 class="text-xl text-center my-6">Seamless Shopping Experience</h3>
+            <p>Browse our online store with ease, enjoying a seamless shopping experience. Easily search for specific
+              titles, explore curated book lists, and take advantage of secure and convenient payment options. Your next
+              captivating read is just a few clicks away.</p>
+          </li>
+          <li
+            class="features-item transition-all ease-in-out bg-gradient-to-b from-stone-950 hover:from-stone-800 duration-400 cursor-pointer py-6 px-4 rounded-xl">
+            <p class="text-4xl text-rose-700 text-center"><i class="fa-solid fa-dollar-sign"></i></p>
+            <h3 class="text-xl text-center my-6">Our Subscriptions</h3>
+            <p>Unlock a world of unlimited reading possibilities with our Subscriptions, granting you exclusive access
+              to a diverse digital library of e-books and audiobooks tailored to your unique reading preferences.</p>
+          </li>
+          <li
+            class="features-item transition-all ease-in-out bg-gradient-to-b from-stone-950 hover:from-stone-800 duration-400 cursor-pointer py-6 px-4 rounded-xl">
+            <p class="text-4xl text-rose-700 text-center"><i class="fa-solid fa-keyboard"></i></p>
+            <h3 class="text-xl text-center my-6">Instant Access</h3>
+            <p>Experience the joy of instant access to your chosen e-books and audiobooks. No more waiting for
+              deliveries or worrying about shipping delays. Simply download your selections and dive into the
+              captivating worlds of literature immediately.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="splide banner" id="banner-carousel" aria-label="Slider Banners">
+      <div class="container mx-auto">
+        <div class="splide__track">
+          <ul class="splide__list items-center">
+            <li class="splide__slide"><img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2017/img/Books/XCM_1078138_Manual_1500x375_1078138_us_books_100_books_evergreen_17_1500x375_R3_jpg_100_Books_Evergreen.jpg"
+                alt="100 books to read in lifetime"></li>
+            <li class="splide__slide"><img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/abc/Sarah_Selects/June_2023/V2/KBHP_Takeoverr_1500x300.jpg"
+                alt="Now reading 'Bad Summer People' by Sarah Selects"></li>
+            <li class="splide__slide"><img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/books/editorial/botysf23/BOYTSF_23_masterABR_1500x200.jpg"
+                alt="Best Books of 2023 so far"></li>
+          </ul>
+        </div>
+        <div class="splide__progress">
+          <div class="splide__progress__bar w-full h-1 bg-rose-700"></div>
+        </div>
+        <div class="splide__controls flex justify-center me-24 mt-2">
+          <button class="splide__toggle inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-400"
+            type="button">
+            <svg class="splide__toggle__play w-[46%] h-[46%]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m22 12-20 11v-22l10 5.5z" fill="#fff" />
+            </svg>
+            <svg class="splide__toggle__pause w-[46%] h-[46%]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m2 1v22h7v-22zm13 0v22h7v-22z" fill="#fff" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="container flex mx-auto flex-col my-6 py-4 px-6 items-center justify-center">
+        <h2 class="section-title text-3xl font-serif font-bold my-6 tracking-wider self-start relative">Our Best Sellers
+        </h2>
+        <ul class="products-list grid grid-cols-[repeat(auto-fit,_minmax(380px,_1fr))] justify-between gap-6">
+          <li
+            class="products-item flex flex-col items-center gap-3 p-6 transition-all ease-in-out bg-gradient-to-b from-stone-950 to-stone-800 hover:to-stone-700 duration-400 rounded-xl">
+            <h3 class="products-title text-2xl font-serif text-rose-600">Fairy Tale</h3>
+            <h4 class="text-xl font-serif">Stephen King</h4>
+            <img class="rounded-lg" src="https://m.media-amazon.com/images/I/81blQfKsLtL.jpg"
+              alt="Book Cover 'Fairy Tale' by Stephen King" width="300">
+            <details>
+              <summary class="cursor-pointer"><strong>A #1 New York Times Bestseller and New York Times Book Review
+                  Editors' Choice!</strong></summary>
+              <p class="products-desc"><strong>Legendary storyteller Stephen King goes into the deepest well of his
+                  imagination in this spellbinding novel about a seventeen-year-old boy who inherits the keys to a
+                  parallel world where good and evil are at war, and the stakes could not be higher—for that world or
+                  ours.</strong></p>
+              <p class="products-desc">Charlie Reade looks like a regular high school kid, great at baseball and
+                football, a decent student. But he carries a heavy load. His mom was killed in a hit-and-run accident
+                when he was seven, and grief drove his dad to drink. Charlie learned how to take care of himself—and his
+                dad. When Charlie is seventeen, he meets a dog named Radar and her aging master, Howard Bowditch, a
+                recluse in a big house at the top of a big hill, with a locked shed in the backyard. Sometimes strange
+                sounds emerge from it.</p>
+              <p class="products-desc">Charlie starts doing jobs for Mr. Bowditch and loses his heart to Radar. Then,
+                when Bowditch dies, he leaves Charlie a cassette tape telling a story no one would believe. What
+                Bowditch knows, and has kept secret all his long life, is that inside the shed is a portal to another
+                world.</p>
+            </details>
+          </li>
+          <li
+            class="products-item flex flex-col items-center gap-3 p-6 transition-all ease-in-out bg-gradient-to-b from-stone-950 to-stone-800 hover:to-stone-700 duration-400 rounded-xl">
+            <h3 class="products-title text-2xl font-serif text-rose-600">The night she disappeared</h3>
+            <h4 class="text-xl font-serif">Lisa Jewell</h4>
+            <img class="rounded-lg" src="https://m.media-amazon.com/images/I/818Fg3epKfL.jpg"
+              alt="Book Cover 'The night she disappeared' by Lisa Jewell" width="300">
+            <details>
+              <summary class="cursor-pointer"><strong>From the #1 New York Times bestselling author of Then She Was Gone
+                  comes “her best thriller yet” (Harlan Coben, New York Times bestselling author) about a young couple’s
+                  disappearance on a gorgeous summer night, and the mother who will never give up trying to find
+                  them.</strong></summary>
+              <p class="products-desc">On a beautiful summer night in a charming English suburb, a young woman and her
+                boyfriend disappear after partying at the massive country estate of a new college friend.</p>
+              <p class="products-desc">One year later, a writer moves into a cottage on the edge of the woods that
+                border the same estate. Known locally as the Dark Place, the dense forest is the writer’s favorite place
+                for long walks and it’s on one such walk that she stumbles upon a mysterious note that simply reads,
+                “DIG HERE.”</p>
+              <p class="products-desc">Could this be a clue towards what has happened to the missing young couple? And
+                what exactly is buried in this haunted ground?</p>
+            </details>
+          </li>
+          <li
+            class="products-item flex flex-col items-center gap-3 p-6 transition-all ease-in-out bg-gradient-to-b from-stone-950 to-stone-800 hover:to-stone-700 duration-400 rounded-xl">
+            <h3 class="products-title text-2xl font-serif text-rose-600">Silver in the bone</h3>
+            <h4 class="text-xl font-serif">Alexandra Bracken</h4>
+            <img class="rounded-lg" src="https://m.media-amazon.com/images/I/91JCUovzJQL.jpg"
+              alt="Book Cover 'Silver in the bone' by Alexandra Bracken" width="300">
+            <details>
+              <summary class="cursor-pointer"><strong>INSTANT #1 NEW YORK TIMES BESTSELLER! From the critically
+                  acclaimed author of Lore comes a stunning new Arthurian fantasy—the tale of a teenage girl who seeks
+                  her destiny in the cursed ruins of Avalon, driven by love, revenge, and pure adrenaline!</strong>
+              </summary>
+              <p class="products-desc">Born without a trace of magic, Tamsin Lark is no match for the sorceresses and
+                Hollowers who populate the magical underground of Boston. But when the only parent she’s ever known
+                disappears without so much as a goodbye, she has no choice but to join in their cutthroat pursuit of
+                enchanted relics to keep herself—and her brother, Cabell—alive.</p>
+              <p class="products-desc">Ten years later, rumors are swirling that her guardian found a powerful ring from
+                Arthurian legend just before he vanished. A run-in with her rival Emrys ignites Tamsin’s hope that the
+                ring could free Cabell from a curse that threatens both of them. But they aren’t the only ones who covet
+                the ring.</p>
+              <p class="products-desc">As word spreads, greedy Hollowers start circling, and many would kill to have it
+                for themselves. While Emrys is the last person Tamsin would choose to partner with, she needs all the
+                help she can get to edge out her competitors in the race for the ring. Together, they dive headfirst
+                into a vipers’ nest of dark magic, exposing a deadly secret with the power to awaken ghosts of the past
+                and shatter her last hope of saving her brother...</p>
+            </details>
+          </li>
+          <li
+            class="products-item flex flex-col items-center gap-3 p-6 transition-all ease-in-out bg-gradient-to-b from-stone-950 to-stone-800 hover:to-stone-700 duration-400 rounded-xl">
+            <h3 class="products-title text-2xl font-serif text-rose-600">It Ends with Us</h3>
+            <h4 class="text-xl font-serif">Colleen Hoover</h4>
+            <img class="rounded-lg" src="https://m.media-amazon.com/images/I/71Chcpw13lL.jpg"
+              alt="Book Cover 'It Ends with Us' by Colleen Hoover" width="300">
+            <details>
+              <summary class="cursor-pointer"><strong>A special hardcover collector’s edition of It Ends with Us,
+                  featuring an exclusive Q&A between Colleen Hoover and her mother, a beautiful foil cover, and newly
+                  designed endpapers—from the #1 New York Times bestselling author of It Starts with Us and soon to be a
+                  major motion picture starring Blake Lively and Justin Baldoni.</strong></summary>
+              <p class="products-desc">Lily hasn’t always had it easy, but that’s never stopped her from working hard
+                for the life she wants. She’s come a long way from the small town where she grew up—she graduated from
+                college, moved to Boston, and started her own business. And when she feels a spark with a gorgeous
+                neurosurgeon named Ryle Kincaid, everything in Lily’s life seems too good to be true.</p>
+              <p class="products-desc">Ryle is assertive, stubborn, maybe even a little arrogant. He’s also sensitive,
+                brilliant, and has a total soft spot for Lily. And the way he looks in scrubs certainly doesn’t hurt.
+                Lily can’t get him out of her head. But Ryle’s complete aversion to relationships is disturbing. Even as
+                Lily finds herself becoming the exception to his “no dating” rule, she can’t help but wonder what made
+                him that way in the first place.</p>
+              <p class="products-desc">As questions about her new relationship overwhelm her, so do thoughts of Atlas
+                Corrigan—her first love and a link to the past she left behind. He was her kindred spirit, her
+                protector. When Atlas suddenly reappears, everything Lily has built with Ryle is threatened.</p>
+            </details>
+          </li>
+          <li
+            class="products-item flex flex-col items-center gap-3 p-6 transition-all ease-in-out bg-gradient-to-b from-stone-950 to-stone-800 hover:to-stone-700 duration-400 rounded-xl">
+            <h3 class="products-title text-2xl font-serif text-rose-600">Lessons in Chemistry</h3>
+            <h4 class="text-xl font-serif">Bonnie Garmus</h4>
+            <img class="rounded-lg" src="https://m.media-amazon.com/images/I/71yNgTMEcpL.jpg"
+              alt="Book Cover 'Lessons in Chemistry' by Bonnie Garmus" width="300">
+            <details>
+              <summary class="cursor-pointer"><strong>#1 NEW YORK TIMES BESTSELLER • GMA BOOK CLUB PICK • Meet Elizabeth
+                  Zott: “a gifted research chemist, absurdly self-assured and immune to social convention” (The
+                  Washington Post) in 1960s California whose career takes a detour when she becomes the unlikely star of
+                  a beloved TV cooking show. • APPLE TV+ SERIES COMING LATER THIS YEAR</strong></summary>
+              <p class="products-desc">Chemist Elizabeth Zott is not your average woman. In fact, Elizabeth Zott would
+                be the first to point out that there is no such thing as an average woman. But it’s the early 1960s and
+                her all-male team at Hastings Research Institute takes a very unscientific view of equality. Except for
+                one: Calvin Evans; the lonely, brilliant, Nobel–prize nominated grudge-holder who falls in love with—of
+                all things—her mind. True chemistry results.</p>
+              <p class="products-desc">But like science, life is unpredictable. Which is why a few years later Elizabeth
+                Zott finds herself not only a single mother, but the reluctant star of America’s most beloved cooking
+                show Supper at Six. Elizabeth’s unusual approach to cooking (“combine one tablespoon acetic acid with a
+                pinch of sodium chloride”) proves revolutionary. But as her following grows, not everyone is happy.
+                Because as it turns out, Elizabeth Zott isn’t just teaching women to cook. She’s daring them to change
+                the status quo.</p>
+              <p class="products-desc">Laugh-out-loud funny, shrewdly observant, and studded with a dazzling cast of
+                supporting characters, Lessons in Chemistry is as original and vibrant as its protagonist.</p>
+            </details>
+          </li>
+          <li
+            class="products-item flex flex-col items-center gap-3 p-6 transition-all ease-in-out bg-gradient-to-b from-stone-950 to-stone-800 hover:to-stone-700 duration-400 rounded-xl">
+            <h3 class="products-title text-2xl font-serif text-rose-600">Call the Canaries Home</h3>
+            <h4 class="text-xl font-serif">Laura Barrow</h4>
+            <img class="rounded-lg" src="https://m.media-amazon.com/images/I/81S+AYHHngL.jpg"
+              alt="Book Cover 'Call the Canaries Home' by Laura Barrow" width="300">
+            <details>
+              <summary class="cursor-pointer"><strong>Three estranged sisters reconnect in their Louisiana hometown to
+                  face an unresolved past in a heartfelt novel about family, grief, secrets, and forgiveness.</strong>
+              </summary>
+              <p class="products-desc">Savannah was four years old when her twin sister, Georgia, went missing from
+                their small Louisiana town, fracturing their family. Twenty-eight years later, Savannah convinces her
+                estranged older sisters, Rayanne and Sue Ellen, to honor the pact they made as children and retrieve the
+                time capsule they buried in their old backyard. But coming home means confronting old ghosts…and their
+                stubborn grandmother, Meemaw.</p>
+              <p class="products-desc">Sifting through the artifacts, they come across a photograph taken on the day
+                Georgia disappeared and spot a familiar woman lingering in the background. While Sue Ellen and Rayanne
+                want to move on with their lives, Savannah is determined to find the woman―and perhaps a clue to the
+                past.</p>
+              <p class="products-desc">When old tensions, rivalries, and memories resurface, the sisters must reconsider
+                what they thought they knew about that fateful day, about each other, and about themselves. On their
+                search to uncover what happened to Georgia, each of them will discover what Meemaw has known all along:
+                family is everything.</p>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pricing section" id="pricing">
+      <div class="container flex mx-auto my-6 py-4 px-6 flex-col items-center justify-center">
+        <h2 class="section-title text-3xl font-serif font-bold my-6 tracking-wider self-end relative">Discover Our
+          Subscription Pricing</h2>
+        <div class="wrapper mx-auto w-full 2xl:w-4/5 my-6">
+          <ul
+            class="subscription-list flex flex-col mx-auto lg:w-full w-4/5 lg:flex-row items-stretch justify-center gap-10">
+            <li
+              class="subscription-item lg:w-1/4 w-full flex flex-col items-center bg-gradient-to-l from-stone-950 to-stone-800 duration-400 rounded-3xl p-8">
+              <h3
+                class="subscription-title bg-rose-900/25 rounded-2xl py-2 px-4 text-xs font-bold tracking-widest uppercase text-center">
+                Basic Reader</h3>
+              <div class="pricing-plan text-center my-8">
+                <span class="euro text-3xl">€</span>
+                <span class="subscription-price text-6xl font-black">9.99</span><br />
+                <span class="subscription-period text-2xl">month</span>
+              </div>
+              <ul class="subscr-features list-disc ps-4 mb-6">
+                <li class="subscr-item">Unlimited access to the digital library</li>
+                <li class="subscr-item">Explore a diverse collection of e-books</li>
+                <li class="subscr-item">Budget-friendly pricing for casual readers</li>
+                <li class="subscr-item">No commitment, cancel anytime</li>
+              </ul>
+              <button class="mt-auto bg-rose-900 rounded-xl py-3 px-6 text-sm font-bold tracking-widest uppercase">Get
+                Started</button>
+            </li>
+            <li
+              class="subscription-item lg:w-1/4 w-full flex flex-col items-center bg-gradient-to-b from-rose-950 to-rose-900 duration-400 rounded-3xl p-8">
+              <h3
+                class="subscription-title bg-zinc-900/75 rounded-2xl py-2 px-4 text-xs font-bold tracking-widest uppercase text-center">
+                Premium Reader</h3>
+              <div class="pricing-plan text-center my-8">
+                <span class="euro text-3xl">€</span>
+                <span class="subscription-price text-6xl font-black">14.99</span><br />
+                <span class="subscription-period text-2xl">month</span>
+              </div>
+              <ul class="subscr-features list-disc ps-4 mb-6">
+                <li class="subscr-item">Unlimited access to the digital library</li>
+                <li class="subscr-item">Personalized recommendations to your preferences</li>
+                <li class="subscr-item">Exclusive access to new releases</li>
+                <li class="subscr-item">Enhanced features like bookmarking and personalized reading lists</li>
+                <li class="subscr-item">Priority customer support</li>
+              </ul>
+              <button class="mt-auto bg-zinc-900 rounded-xl py-3 px-6 text-sm font-bold tracking-widest uppercase">Get
+                Started</button>
+            </li>
+            <li
+              class="subscription-item lg:w-1/4 w-full flex flex-col items-center bg-gradient-to-r from-zinc-950 to-zinc-800 duration-400 rounded-3xl p-8">
+              <h3
+                class="subscription-title bg-rose-900/50 rounded-2xl py-2 px-4 text-xs font-bold tracking-widest uppercase text-center">
+                Book Club Membership</h3>
+              <div class="pricing-plan text-center my-8">
+                <span class="euro text-3xl">€</span>
+                <span class="subscription-price text-6xl font-black">19.99</span><br />
+                <span class="subscription-period text-2xl">month</span>
+              </div>
+              <ul class="subscr-features list-disc ps-4 mb-6">
+                <li class="subscr-item">Access to the digital library</li>
+                <li class="subscr-item">Participation in virtual book clubs</li>
+                <li class="subscr-item">Exclusive access to book club events</li>
+                <li class="subscr-item">Curated book selections based on club themes and recommendations</li>
+                <li class="subscr-item">Opportunities to connect and engage with a community of like-minded readers</li>
+              </ul>
+              <button class="mt-auto bg-rose-900 rounded-xl py-3 px-6 text-sm font-bold tracking-widest uppercase">Get
+                Started</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section py-6" id="testimonials">
+      <div class="splide mb-6" id="testimonials-carousel" aria-label="Slider Testimonials">
+        <div class="container mx-auto relative">
+          <span class="absolute top-28 left-8 text-9xl -z-10 text-rose-800"><i
+              class="fa-solid fa-quote-left"></i></span>
+          <h2 class="section-title inline-flex text-3xl font-serif font-bold my-6 tracking-wider self-start relative">
+            What the book lovers says about us</h2>
+          <h3 class="my-4 text-lg uppercase tracking-wide">The Wise Owl Bookshop has inspired hundreds people to read &
+            love books</h3>
+          <div class="splide__track my-6">
+            <ul class="testimonials-list splide__list text-center"> </ul>
+          </div>
+          <div class="splide__progress">
+            <div class="splide__progress__bar w-full h-1 bg-rose-700"></div>
+          </div>
+          <div class="splide__controls flex justify-center me-24 mt-2">
+            <button class="splide__toggle inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-400"
+              type="button">
+              <svg class="splide__toggle__play w-[46%] h-[46%]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m22 12-20 11v-22l10 5.5z" fill="#fff" />
+              </svg>
+              <svg class="splide__toggle__pause w-[46%] h-[46%]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m2 1v22h7v-22zm13 0v22h7v-22z" fill="#fff" />
+              </svg>
+            </button>
+          </div>
+          <span class="absolute bottom-16 -right-4 text-9xl -z-10 text-rose-800"><i
+              class="fa-solid fa-quote-right"></i></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts section pt-6 pb-16 relative" id="contacts">
+      <div class="mx-auto max-w-2xl px-4 text-center">
+        <h2 class="section-title inline-flex text-3xl font-serif font-bold my-6 tracking-wider relative">Contact us</h2>
+      </div>
+      <form id="contacts-form" action="/" method="GET" class="mx-auto mt-4 max-w-xl sm:mt-6 px-4">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div class="sm:col-span-2 mt-2">
+            <label for="full-name" class="block text-sm font-semibold leading-6">Full name *</label>
+            <input required type="text" name="full-name" id="full-name" autocomplete="given-name"
+              class="mt-1 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-700 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div class="sm:col-span-2 mt-2">
+          <label for="email" class="block text-sm font-semibold leading-6">Email *</label>
+          <input required type="email" name="email" id="email" autocomplete="email"
+            class="mt-1 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-700 sm:text-sm sm:leading-6">
+        </div>
+        </div>
+        <div class="sm:col-span-2 mt-2">
+          <label for="phone-number" class="block text-sm font-semibold leading-6">Phone number *</label>
+          <div class="relative mt-1">
+            <div class="absolute inset-y-0 left-0 flex items-center">
+              <label for="country" class="sr-only">Country</label>
+              <select id="country" name="country"
+                class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-700 sm:text-sm">
+                <option>US</option>
+                <option>CA</option>
+                <option>EU</option>
+              </select>
+              <svg class="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400" viewBox="0 0 20 20"
+                fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <input required type="tel" name="phone" id="phone-number" autocomplete="tel"
+              class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-700 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div class="sm:col-span-2 mt-2">
+          <label for="message" class="block text-sm font-semibold leading-6">Message *</label>
+          <textarea required name="message" id="message" rows="4"
+            class="mt-1 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-700 sm:text-sm sm:leading-6"></textarea>
+        </div>
+        </div>
+        <div class="flex gap-x-4 sm:col-span-2 mt-6">
+          <div class="flex h-6 items-center">
+            <input required
+              class="w-6 h-6 me-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-700 rounded-md checked:bg-rose-700 checked:hover:bg-rose-700 checked:focus:bg-rose-700 focus:ring-gray-900/5"
+              type="checkbox" name="terms" id="policy">
+            <label class="cursor-pointer text-sm leading-6 text-gray-400" for="policy">By selecting this, you agree to
+              our <a href="#" class="font-semibold text-rose-600">privacy&nbsp;policy</a> *.</label>
+          </div>
+        </div>
+        </div>
+        <button type="submit"
+          class="mt-10 block w-full rounded-md bg-rose-900 py-3 px-6 rounded-xl text-center text-sm font-semibold text-white shadow-sm hover:bg-rose-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-700 tracking-widest uppercase">Let's
+          talk</button>
+        </div>
+      </form>
+      </div>
+    </section>
+
+    <a href="#top" class="to-top fixed bottom-20 right-20 text-3xl text-rose-600"><i
+        class="fa-solid fa-circle-up"></i></a>
+  </main>
+
+  <footer class="main-footer px-8 bg-zinc-800">
+    <div class="container mx-auto p-10">
+      <div class="logo-block w-3/4 mx-auto">
+        <a href="/" class="flex flex-col items-center gap-6 hover:text-rose-500 transition-colors duration-200">
+          <img class="bg-stone-400/75 border-4 border-stone-600/75 rounded-lg" src="./assets/images/logo.png"
+            alt="The logotype of The Wise Owl Bookshop" width="80">
+          <div class="title text-xl font-serif tracking-wide text-center">
+            <h2>The Wise Owl Bookshop | A Haven for Book Lovers</h2>
+            <hr class="flex w-2/3 my-4 border-zinc-600 mx-auto my-1" />
+          </div>
+        </a>
+      </div>
+      <ul class="social-list flex items-center justify-center gap-x-6 text-xl">
+        <li class="social-item"><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+            class="social-link"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li class="social-item"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+            class="social-link"><i class="fa-brands fa-facebook"></i></a></li>
+        <li class="social-item"><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+            class="social-link"><i class="fa-brands fa-square-youtube"></i></a></li>
+      </ul>
+      <hr class="flex w-2/3 my-4 border-zinc-600 mx-auto my-1" />
+      <p class="copyright text-xs uppercase tracking-wider text-center color-zinc-600">© 2023 The Wise Owl Bookshop -
+        Olena Surilova</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
